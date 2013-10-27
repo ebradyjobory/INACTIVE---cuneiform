@@ -1,8 +1,10 @@
 MyPage::Application.routes.draw do
-  get "pages/home"
-  get "pages/portfolio"
-  get "pages/about"
-  get "pages/contact"
+  root 'pages#home'
+  match '/portfolio', to: 'pages#portfolio', via: 'get'
+  match '/about', to: 'pages#about', via: 'get'
+  match '/contact', to: 'pages#contact', via: 'get'
+ 
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

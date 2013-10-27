@@ -3,14 +3,14 @@ require 'spec_helper'
 describe "my page" do
 
   describe "Home page" do
-
-    it "should have the content 'Home'" do
-      visit '/pages/home'
-      expect(page).to have_content('Home')
-    end
-    it "should have the right title" do
-    	visit '/pages/home'
-    	expect(page).to have_title("Essam Joubori | Home")
+   
+   	it "should have the base title" do
+   		visit '/pages/home'
+   		expect(page).to have_title("Essam Joubori")
+   	end
+   	it "should not have a custom page title" do
+   		visit '/pages/home'
+   		expect(page).not_to have_title('| Home')
    	end
 
   end
