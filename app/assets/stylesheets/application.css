@@ -6819,23 +6819,40 @@ td.visible-print {
 
  
 }
-.name {
+.name-font {
 	
 	font-size: 160%;
-	text-transform: uppercase;
-	background-color: #2980b9;
+
 }
 #ul_font li a {
 	color: #ecf0f1;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;	
 }
+
 #ul_font li a:hover {
 	color: #f1c40f;
 }
 
+/*#ul_font li a span.show {
+	display: none;
+}
+
+#ul_font li a:hover span.show {
+	display: inline;
+	font-family: 'Flamenco', cursive;
+}
+
+#ul_font li a:hover span.noshow {
+	display: none;
+}*/
+
+.link-font {
+	font-size: 125%;
+}
 
 #nav-bar-color {
 	background-color: #2980b9;
 	border-radius: 0px;
-	border:none;
+	border-bottom: 15px;
+	border-image: url(border-tiled.jpg) 0 0 60 0 repeat;
 }
